@@ -3,33 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Big Pager</title>
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <title>Big Pager, Inc. — Software Development</title>
+  <meta name="description" content="Big Pager, Inc. is a software development company building intelligent tools for the modern web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    html, body {
-      height: 100%;
-      width: 100%;
-      background: #000;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { height: 100%; }
     body {
+      min-height: 100%;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fafafa;
+      color: #18181b;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column;
     }
-    h1 {
-      font-family: "UnifrakturMaguntia", cursive;
-      font-size: clamp(3rem, 15vw, 10rem);
-      color: #fff;
-      text-shadow: 0 0 20px rgba(255,255,255,0.3);
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .company-name {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .tagline {
+      font-size: 1.125rem;
+      color: #52525b;
+      max-width: 36rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .detail {
+      font-size: 0.9rem;
+      color: #71717a;
+      margin-bottom: 3rem;
+    }
+
+    .divider {
+      width: 3rem;
+      height: 2px;
+      background: #e4e4e7;
+      margin-bottom: 3rem;
+    }
+
+    .product-section h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #a1a1aa;
+      margin-bottom: 1.5rem;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .product-card a {
+      display: block;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .product-card a:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    .product-card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 24px;
+    }
+
+    .product-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .product-name a {
+      color: #18181b;
+      text-decoration: none;
+    }
+
+    .product-name a:hover {
+      text-decoration: underline;
+    }
+
+    .product-desc {
+      font-size: 0.95rem;
+      color: #52525b;
+      max-width: 28rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #a1a1aa;
+      border-top: 1px solid #f4f4f5;
+    }
+
+    footer a {
+      color: #71717a;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>BEEP BEEP!</h1>
+  <main>
+    <h1 class="company-name">Big Pager, Inc.</h1>
+    <p class="tagline">
+      A software development company building intelligent tools for the modern web.
+    </p>
+    <p class="detail">Incorporated in Delaware</p>
+
+    <div class="divider"></div>
+
+    <div class="product-section">
+      <h2>Our Product</h2>
+      <div class="product-card">
+        <a href="https://cerebruh.is">
+          <img src="cerebruh-logo.png" alt="Cerebruh logo">
+        </a>
+        <div class="product-name"><a href="https://cerebruh.is">Cerebruh</a></div>
+        <p class="product-desc">
+          Your personal AI agent — always on, always learning. Cerebruh connects to your tools, manages your tasks, and works for you around the clock.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Big Pager, Inc. &middot; <a href="mailto:hello@bigpager.com">hello@bigpager.com</a></p>
+  </footer>
 </body>
 </html>
